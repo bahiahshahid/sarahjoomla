@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: #344457;
+            padding: 20px 0;
+        }
+        
+        .nav-menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+        
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+        }
+        
+        .nav-link:hover {
+            color: #efea50;
+        }
+        
+        /* Resume Content Styles */
+        .resume-container {
+            background-color: #b5e8ff;
+            padding: 40px 0;
+            min-height: calc(100vh - 180px);
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .section-box {
+            background-color: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .section-title {
+            color: #000000;
+            border-bottom: 2px solid #344457;
+            padding-bottom: 8px;
+            margin-bottom: 25px;
+        }
+        
+        .job-title {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            align-items: center;
+        }
+        
+        .time-badge {
+            background-color: #e6f2ff;
+            color: #000000;
+            padding: 3px 10px;
+            border-radius: 15px;
+            font-size: 0.9rem;
+        }
+        
+        .two-column {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .column {
+            flex: 1;
+        }
+        
+        .skill-badge {
+            background-color: #e6f2ff;
+            color: #000000;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            margin: 5px 5px 5px 0;
+        }
+        
+        .footer {
+            background-color: #344457;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: auto;
+        }
+        
+        @media (max-width: 768px) {
+            .two-column {
+                flex-direction: column;
+            }
+            
+            .nav-menu {
+                flex-direction: column;
+                gap: 10px;
+                align-items: center;
+            }
+        }
+        
+        /* Resume Header */
+        .resume-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .resume-header h1 {
+            color: #000000;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .resume-header p {
+            color: #000000;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="aboutme.html" class="nav-link">About Me</a></li>
+                <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="resume.html" class="nav-link">Resume</a></li>
+                <li><a href="contact.html" class="nav-link">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Resume Content -->
+    <div class="resume-container">
+        <div class="container">
+            <!-- Resume Header -->
+            <div class="resume-header">
+                <h1>Let's Get to Know My Professional Side</h1>
+                <p>My work experience and education journey</p>
+            </div>
+
+            <!-- Work Experience Section -->
+            <div class="section-box">
+                <h2 class="section-title">Work Experience</h2>
+                
+                <!-- Internship -->
+                <div style="margin-bottom: 30px;">
+                    <div class="job-title">
+                        <h3 style="color: #000000; margin: 0;">INTERNSHIP—ASSISTANT FINANCIAL/HEAD OF DATA ANALYST</h3>
+                        <span class="time-badge">2024 (2 months)</span>
+                    </div>
+                    <h4 style="color: #344457; margin-top: 5px;">MARA Excellent Ventures Sdn. Bhd</h4>
+                    <ul style="color: #000000; padding-left: 20px; margin-top: 10px;">
+                        <li>Assisted financial department with data analysis and reporting</li>
+                        <li>Managed and organized large datasets for business decision making</li>
+                        <li>Created visualizations to present financial data to stakeholders</li>
+                    </ul>
+                </div>
+                
+                <!-- Starbucks -->
+                <div style="margin-bottom: 30px;">
+                    <div class="job-title">
+                        <h3 style="color: #000000; margin: 0;">PART-TIME BARISTA</h3>
+                        <span class="time-badge">2021-2024</span>
+                    </div>
+                    <h4 style="color: #344457; margin-top: 5px;">Starbucks</h4>
+                    <ul style="color: #000000; padding-left: 20px; margin-top: 10px;">
+                        <li>Prepared quality beverages and food orders following Starbucks standards</li>
+                        <li>Operated the cash register and maintained cleanliness in the store</li>
+                        <li>Built strong customer relationships and ensured excellent service experience</li>
+                    </ul>
+                </div>
+                
+                <!-- Sale Promoter -->
+                <div style="margin-bottom: 30px;">
+                    <div class="job-title">
+                        <h3 style="color: #000000; margin: 0;">PART-TIME SALE PROMOTER</h3>
+                        <span class="time-badge">2022</span>
+                    </div>
+                    <h4 style="color: #344457; margin-top: 5px;">KD Yuan Food And Health Store</h4>
+                    <ul style="color: #000000; padding-left: 20px; margin-top: 10px;">
+                        <li>Promoted and explained health and organic food products to customers</li>
+                        <li>Supported store operations and assisted with restocking and display arrangements</li>
+                        <li>Developed communication and customer service skills in a retail health food environment</li>
+                    </ul>
+                </div>
+                
+                <!-- Housekeeping -->
+                <div>
+                    <div class="job-title">
+                        <h3 style="color: #000000; margin: 0;">PART-TIME HOUSEKEEPING</h3>
+                        <span class="time-badge">2022-2023</span>
+                    </div>
+                    <h4 style="color: #344457; margin-top: 5px;">Twin Mutiara Chalet</h4>
+                    <ul style="color: #000000; padding-left: 20px; margin-top: 10px;">
+                        <li>Ensured all rooms and facilities were properly cleaned and maintained</li>
+                        <li>Checked for equipment issues or deficiencies and reported them</li>
+                        <li>Helped maintain high-quality housekeeping standards for client satisfaction</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Two Column Layout -->
+            <div class="two-column">
+                <!-- Education Column -->
+                <div class="section-box column">
+                    <h2 class="section-title">Education</h2>
+                    <div style="margin-bottom: 25px;">
+                        <h3 style="color: #000000; margin-bottom: 5px;">BACHELOR OF INFORMATION SCIENCE (HONS) INFORMATION CONTENT MANAGEMENT</h3>
+                        <h4 style="color: #344457; margin-top: 0;">Universiti Teknologi MARA (UiTM)</h4>
+                        <p style="color: #000000; margin: 5px 0;">Kampus Puncak Perdana, Shah Alam</p>
+                        <p style="color: #000000; font-style: italic;">2024 - Expectedly 2026</p>
+                    </div>
+                    <div style="margin-bottom: 25px;">
+                        <h3 style="color: #000000; margin-bottom: 5px;">DIPLOMA IN INFORMATION MANAGEMENT</h3>
+                        <h4 style="color: #344457; margin-top: 0;">Universiti Teknologi MARA (UiTM)</h4>
+                        <p style="color: #000000; margin: 5px 0;">Kampus Machang, Kelantan</p>
+                        <p style="color: #000000; font-style: italic;">2022 - 2024</p>
+                    </div>
+                    <div>
+                        <h3 style="color: #000000; margin-bottom: 5px;">AS-SOFA CENTRE OF EXCELLENCE FAST TRACK</h3>
+                        <p style="color: #000000; margin: 5px 0;">Sijil Pelajaran Malaysia (SPM)</p>
+                        <p style="color: #000000; margin: 5px 0;">Hulu Langat, Selangor</p>
+                        <p style="color: #000000; font-style: italic;">2020 - 2021</p>
+                    </div>
+                </div>
+                
+                <!-- Skills Column -->
+                <div class="section-box column">
+                    <h2 class="section-title">Skills & Strengths</h2>
+                    <div style="margin-bottom: 25px;">
+                        <h3 style="color: #000000; margin-bottom: 10px;">LANGUAGE</h3>
+                        <div>
+                            <span class="skill-badge">English</span>
+                            <span class="skill-badge">Malay</span>
+                        </div>
+                    </div>
+                    <div style="margin-bottom: 25px;">
+                        <h3 style="color: #000000; margin-bottom: 10px;">STRENGTHS</h3>
+                        <div>
+                            <span class="skill-badge">Creative & Self-Driven</span>
+                            <span class="skill-badge">Multitasking</span>
+                            <span class="skill-badge">Independent</span>
+                            <span class="skill-badge">Discipline</span>
+                            <span class="skill-badge">Hardworking</span>
+                            <span class="skill-badge">Versatile Work Experience</span>
+                            <span class="skill-badge">Communication & People Skills</span>
+                            <span class="skill-badge">Tech-Savvy & Curious</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 style="color: #000000; margin-bottom: 10px;">SKILLS</h3>
+                        <div>
+                            <span class="skill-badge">Microsoft Software</span>
+                            <span class="skill-badge">Google Doc</span>
+                            <span class="skill-badge">Canva</span>
+                            <span class="skill-badge">Wix Website Builder</span>
+                            <span class="skill-badge">HTML, CSS, JavaScript</span>
+                            <span class="skill-badge">PHP, MySQL</span>
+                            <span class="skill-badge">Photoshop/Illustrator</span>
+                            <span class="skill-badge">Video Production</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Siti Sarah Badli. All Rights Reserved.</p>
+        <div style="margin-top: 10px;">
+            <a href="#" style="color: white; margin: 0 10px;"><i class="fab fa-linkedin"></i></a>
+            <a href="#" style="color: white; margin: 0 10px;"><i class="fab fa-github"></i></a>
+            <a href="#" style="color: white; margin: 0 10px;"><i class="fas fa-envelope"></i></a>
+        </div>
+    </footer>
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</body>
+</html>
